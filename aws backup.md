@@ -1,0 +1,4 @@
+- AWS Organization backup policies are part of aws Backup and define backup plans for resources (EBS volumns, RDS) across accounts
+- Cloudwatch Logs is not supported resource type for AWS backup
+- Backup policies are for snapshot or point-in-time backups, not continuous log streaming to S3
+- S3 bucket policy is irrelevant for log delivery (cloudwatch logs uses kinesis or subscription  filters, not direct S3 write)

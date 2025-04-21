@@ -1,0 +1,2 @@
+- Guarduty is a threat detection service that monitor for malicious activity (unusual API call)
+- Guarduty is purpose-built for detecting port scan and other threat

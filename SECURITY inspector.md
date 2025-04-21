@@ -1,0 +1,1 @@
+- AWS inspector accesses EC2 instances for vulnerability and network reachability 

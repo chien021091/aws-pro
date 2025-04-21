@@ -1,0 +1,4 @@
+- SCP does not have allow statement
+- SCPs cannot be attached to services - they must be attached to the organization root, OUs, or accounts.
+- SCP don't grant permissions, they just filter what's available
+- SCP affect all users/roles in an account including the roor user (except for service-linked roles)

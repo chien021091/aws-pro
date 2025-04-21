@@ -1,0 +1,2 @@
+- SSM Run Command can apply configuration, for patch OS, it complicated
+- If using Run command to invoke the patching document is manual, and doesn't ensure automatic application to new instance on launch

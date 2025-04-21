@@ -1,0 +1,2 @@
+- by default, secret manager use KMS aws-managed for encrypt data
+- KMS aws-managed can not update (modify)

@@ -1,0 +1,2 @@
+- detect the not compliance, not prevent
+- Config rules are not real-time

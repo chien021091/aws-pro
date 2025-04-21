@@ -1,0 +1,2 @@
+- After pipeline, code pipeline can emit some event in realtime: PipelineExecutionSucceeded, PipelineExecutionFailed
+- With code commit, CodePipeline cannot need S3 or Eventbridge for event trigger, it use direct code commit as the source
