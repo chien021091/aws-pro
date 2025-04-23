@@ -5,3 +5,7 @@
 
 - Baseline configuration: 
     - May include IAM Role, VPC configurations, logging setups, or other standard resources
+
+- Delegate Administration
+    - AWS Organization allows delegating certains actions to an another account
+    - Delegate Administration is typically used for service like Control tower, catalog

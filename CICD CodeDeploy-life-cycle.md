@@ -61,3 +61,8 @@ Cause:
 - The instances are not properly registered or reconized by CodeDeploy
 - The instances IAM role lacks permission to interact with codeDeploy or s3
 - The application revision is invalid or missing critical files (appsec.yml)
+
+Code deploy provides predefined deployement configuration for ecs:
+- CodeDeployDefault.ECSLinear10PercentEvery1Minutes: shift 10% of trafic every minutes (10 min total)
+- CodeDeployDefault.ECSCanary10Percent5Minutes: shift 10% to new version, wait 5 mins, shift the remaining 90%  all at once
+- CodeDeployDefault.ECSAllAtOnce: shift all trafic at once
