@@ -1,1 +1,2 @@
-- AWS inspector accesses EC2 instances for vulnerability and network reachability 
+- scan package vulnerability, database CVE, Network reachability (ec2)
+- evaluate only ec2 instance, container image, lambda function
