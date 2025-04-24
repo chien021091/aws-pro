@@ -1,2 +1,3 @@
 - After pipeline, code pipeline can emit some event in realtime: PipelineExecutionSucceeded, PipelineExecutionFailed
 - With code commit, CodePipeline cannot need S3 or Eventbridge for event trigger, it use direct code commit as the source
+- Code pipeline use event bright for trigger a pipeline when changes are pushed to source ( like code commit, github ), if no event bright rule is in place ( or misconfigured) code pipeline won,t be trigged
