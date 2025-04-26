@@ -22,3 +22,10 @@ Cloudwath alarm Concept (Example):
 - Missing data handling
     - Breaching: Assumes missing data would trigger the alarm(treat as below threshold)
     - Not breaching: Assumes missing data would not trigger the alarm (treat as above threshold)
+
+
+
+Cloudwatch Dashboard
+- Can use directly from Cloud log Insight
+- Cannot import result from Athena
+- Can import result from x-ray, but only as timeline or service Map (not pie charte)

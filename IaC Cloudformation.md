@@ -18,4 +18,5 @@ Attention:
 
 
 - DeletionPolicy in CloudFormation supports values like: DELETE, RATAIN, SNAPSHOT (not EMPTY)
+- Cloudformation emit some event during stack operation like: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_FAILED
 
