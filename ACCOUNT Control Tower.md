@@ -9,3 +9,8 @@
 - Delegate Administration
     - AWS Organization allows delegating certains actions to an another account
     - Delegate Administration is typically used for service like Control tower, catalog
+
+
+Provide guardrail (proactive and detective control) for enforce policies
+- Proactive in aws control tower prevent non-compliance actions before the occur
+- Detective in aws control tower indentity non-compliance after the are created

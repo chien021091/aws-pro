@@ -1,0 +1,1 @@
+- AWS Fargate don't support EFS CSI Driver for EKS (EC2 support)

@@ -4,3 +4,8 @@ Instant profile
 - Without an instance profile, the EC2 instance wouldn't know how to securely map the role to the instance profile
 
 - Don't have IPv6 elastic IPs
+
+Warm pool
+- A warm pool keep pre-initialized instances in the stopped state, reducing scale-out latency
+- When the ASG need scale out, it uses instance from warm pool, which start faster than launching instance from scratch
+- Instance in the warm pool can run bootstrap script (install dependency) while stopped, futher reducing start time
