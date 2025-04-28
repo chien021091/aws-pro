@@ -14,3 +14,10 @@
 Provide guardrail (proactive and detective control) for enforce policies
 - Proactive in aws control tower prevent non-compliance actions before the occur
 - Detective in aws control tower indentity non-compliance after the are created
+
+
+
+Customization for Control Tower (CFCT):
+- An aws-supported solution to extend Control Tower by automating custom resources deployment and SCPs
+- Use a CodeCommit repository to store cloudformation templates and SCP json document
+- Integrates with Controle Tower's lifecycle event to deploy customization when new account are created

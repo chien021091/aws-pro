@@ -8,10 +8,6 @@ List Action:
 - System Manager Action: Create OpsItem or Incident
 
 
-
-
-
-
 Cloudwath alarm Concept (Example):
 - Datapoint to Alarm
     - Specifies how many datapoints(periods) within the evaluation window must breach the threshold to trigger the alarm
@@ -24,8 +20,18 @@ Cloudwath alarm Concept (Example):
     - Not breaching: Assumes missing data would not trigger the alarm (treat as above threshold)
 
 
-
 Cloudwatch Dashboard
 - Can use directly from Cloud log Insight
 - Cannot import result from Athena
 - Can import result from x-ray, but only as timeline or service Map (not pie charte)
+
+Alarm with EC2 Action
+Case:
+Monitor EC2 health via StatusCheckFailed Metric
+- StatusCheckFailed Instance: Indicates with issue instance (OS level problem crash, network, software misconfiguration, resource exhaution)
+- StatusCheckFailed system: Indicates issues with the underlying host (power failure, hardware failure, network connectivity)
+- Action: reboot, recover, terminate
+Recover Action:
+- Moving it to new underlying host(resolving power or hardware issue)
+- Restarting instance with the same configuration (instance ID, private IP, EBS volumn)
+- Preserving all EBS volumn, ensuring no loss data on disk
