@@ -51,6 +51,11 @@ To troubleshoot a deployment that fails during the AfterBlockTraffic deployment 
 
 - AfterAllowTraffic – You can use this deployment lifecycle event to run tasks on instances after they are registered with a load balancer.
 
+For lambda function, can allow or deny trafic via lambda alias:
+- BeforeAllowTraffic
+- AfterAllowTraffic
+
+no have lifecycle: BeforeInstall or ValidateService
 
 
 
@@ -66,3 +71,8 @@ Code deploy provides predefined deployement configuration for ecs:
 - CodeDeployDefault.ECSLinear10PercentEvery1Minutes: shift 10% of trafic every minutes (10 min total)
 - CodeDeployDefault.ECSCanary10Percent5Minutes: shift 10% to new version, wait 5 mins, shift the remaining 90%  all at once
 - CodeDeployDefault.ECSAllAtOnce: shift all trafic at once
+
+A deployment group defines which instance receive the deployment, identified by tag group
+- A tag group specified by one or more tag group (key-value) that an instancr must match to be included in a deployment
+- Multiple tag groups are evaluated with OR logic: an instance is match if it match any tag group
+- With in single tag group, multiples tags are evaluated by AND logic: an instance is match all tag in a single group
