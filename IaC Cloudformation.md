@@ -20,3 +20,12 @@ Attention:
 - DeletionPolicy in CloudFormation supports values like: DELETE, RATAIN, SNAPSHOT (not EMPTY)
 - Cloudformation emit some event during stack operation like: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_FAILED
 
+NestedStack
+- Allows a parent stack to reference child stack, enabling modular templates with defined dependencies. The dependsOn attribute on resource dependency in parent stack ensure the template deployed in the correct order
+
+Cloudformation custom resource
+- allow Cloudformation to manage resources not natively supported by including a lambda function to handle: create, update, delete operation
+    - Cloudformation invodes the lambda function, passing a request(create, update, delete) and a pre-signed S3 url in the payload event data
+    - lambda perform the desired action
+    - lambda must send a response contain the pre-signed url , indicating success or failure
+    - Cloudformation wait for this reponse to change the stack status
