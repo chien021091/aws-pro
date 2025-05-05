@@ -1,0 +1,3 @@
+ARC(Application Recovery Controller) provides safety rules to prevent unintended consquences when managing routing controls. There are 2 types of safety rule:
+- Assertion rule: Enforces that specfic criteria are met when changing routing control states. For example, it can ensure that at least one routing control is ON after a state change. If the criterie not met, the change is rejected
+- Gating rule: Acts as an on/off switch for a set of target routing control, controlled by a gating routing control
