@@ -1,0 +1,1 @@
+We can store the access log and connection log of ALB directly to S3 bucket.

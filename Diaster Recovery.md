@@ -1,0 +1,2 @@
+RPO of 8 hours: Recovery Point Objective, Maximal data loss (backup or replication must occur at least every 8h)
+RTO of 2 hours: Recovery Time Objective, application must be fully operational in the DR region within 2 hours of a diaster
