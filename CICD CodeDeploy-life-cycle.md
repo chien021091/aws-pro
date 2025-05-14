@@ -470,3 +470,7 @@ A deployment group defines which instance receive the deployment, identified by 
 - A tag group specified by one or more tag group (key-value) that an instancr must match to be included in a deployment
 - Multiple tag groups are evaluated with OR logic: an instance is match if it match any tag group
 - With in single tag group, multiples tags are evaluated by AND logic: an instance is match all tag in a single group
+
+OneAtTime Deploy configuration
+- The OneAtTime settings applies to the deployment pace for green fleet (deployment application to one instance at a time)
+- for derigistering the original (blue fleet), CodeDeploy doesn't use OneAtTime to control termination timing, instead, termination occurs AllAtOne

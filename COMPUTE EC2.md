@@ -9,3 +9,8 @@ Warm pool
 - A warm pool keep pre-initialized instances in the stopped state, reducing scale-out latency
 - When the ASG need scale out, it uses instance from warm pool, which start faster than launching instance from scratch
 - Instance in the warm pool can run bootstrap script (install dependency) while stopped, futher reducing start time
+
+EC2 Instance Connect
+- a way to control short-live SSH key and access control by IAM policy. 
+- have ec2-instance-connect agent 
+- need public IP, network connectivity

@@ -35,3 +35,8 @@ Recover Action:
 - Moving it to new underlying host(resolving power or hardware issue)
 - Restarting instance with the same configuration (instance ID, private IP, EBS volumn)
 - Preserving all EBS volumn, ensuring no loss data on disk
+
+Cloudwatch cross-account Observability
+- support creating dashboard in the monitoring account for log, trace, metric ....
+- Enables monitoring account to search, visualize, and analyze telemetry cross account
+- Support to 100000 source account, 
