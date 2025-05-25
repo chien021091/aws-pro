@@ -7,3 +7,5 @@ Conformance pack
 - the conformance pack can be configure the aws-StopEC2Instance runbook to stop noncompliant instance
 
 Users creating remdiation actions need iam:PassRole permissions to assign the role
+
+AWS Config use SNS for stream all the notifications and configuration changes. NOT selectively for a given rule (can not use direct SNS for send email in the case compliance)

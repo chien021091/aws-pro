@@ -474,3 +474,7 @@ A deployment group defines which instance receive the deployment, identified by 
 OneAtTime Deploy configuration
 - The OneAtTime settings applies to the deployment pace for green fleet (deployment application to one instance at a time)
 - for derigistering the original (blue fleet), CodeDeploy doesn't use OneAtTime to control termination timing, instead, termination occurs AllAtOne
+
+Enable rollback
+- Can link CodeDeploy rollback to cloudwatch Alarm (EC2), so if the alarm triggered, code deploy will rollback to previous version
+- Use cloudwatch alarm, you can monitor metric for the ec2 instance, ASG group being managed by codeDeploy and then invode an action if the metric you are tracking crosses a certain threshold for a defined a period time.

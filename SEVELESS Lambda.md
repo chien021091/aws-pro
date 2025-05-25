@@ -44,3 +44,8 @@ public class ProcessSQSMessageBatch implements RequestHandler<SQSEvent, SQSBatch
 Lambda version:
 - We can create any version for lambda and use these version for trigger
 - We can create an alias for each version. with alias different, we have the ARN different.
+
+## To upload a new version lambda , source code in s3
+- s3 bucket
+- s3 key
+- s3 version

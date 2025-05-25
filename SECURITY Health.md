@@ -1,0 +1,1 @@
+AWS Health will generate an AWS_RISK_CREDENTIALS_EXPOSED when an IAM access key has been publicly exposed on github

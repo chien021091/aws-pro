@@ -15,3 +15,8 @@ Can use Athena for create a temporary table in a new bucket and query this log
 - MD5 Checksum: A 128 bit hash to verify data integrity by comparing the source's file MD5 checksum with the object's upload checksum
 - S3 PutObject: Support intergrity checking via Content-MD5 header and return an ETAG in the response, which can be use for verification
 - ETag: a response header that often represents the MD5 checksum of the uploaded object
+
+
+Encrypt 
+- SSE-S3: can read high rate > 10 000 per seconde
+- KMS: throttle rate < 10 000 per seconde
