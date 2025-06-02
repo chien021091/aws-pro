@@ -7,3 +7,4 @@ Attribute based- Access Control (ABAC)
 Protocol
 - SAML 2.0 Identity Provider: for authentification(SSO)
 - SCIM (System for cross-domain Identity Management): for automatic provisioning of users and groups. SCIM enables synchronization of user and group information from the external IdP to AWS.
+- SCIM not has the identity source (AD connection), lust set an external IdP
