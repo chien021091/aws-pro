@@ -16,6 +16,10 @@ Can use Athena for create a temporary table in a new bucket and query this log
 - S3 PutObject: Support intergrity checking via Content-MD5 header and return an ETAG in the response, which can be use for verification
 - ETag: a response header that often represents the MD5 checksum of the uploaded object
 
+TO check integrety of object when upload to S3 with checksum
+- Calculate md5-checksum (hash-A) -> add to Content-md5 parameter (body to put) -> PutObject -> S3 Calculate md5-checksum(hash-B) -> if file s3 is modified (hash-A !== hash-B, error) -> if not (succeeded)
+- s3 return an eTag (md5-checksum, hashA) -> calculate md5-checksum for file (want to upload) -> if different, upload error-> if same, succeeded
+
 
 Encrypt 
 - SSE-S3: can read high rate > 10 000 per seconde

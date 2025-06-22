@@ -14,3 +14,5 @@ ParallelizationFactor
 - A feature that allows you to process one shard of a kinesis (dynamo db) data stream with more than one lambda invocation simultaneously.
 
 Compare between kinesis data stream and data firehorse
+
+- Unified Cloudwatch agent can not send direct to AWS firehorse

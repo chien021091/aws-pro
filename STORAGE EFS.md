@@ -1,0 +1,1 @@
+- amazon-efs-utils package is specified to mounting EFS file system and support encrypt transit (using TLS)

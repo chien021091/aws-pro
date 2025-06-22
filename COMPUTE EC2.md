@@ -14,3 +14,9 @@ EC2 Instance Connect
 - a way to control short-live SSH key and access control by IAM policy. 
 - have ec2-instance-connect agent 
 - need public IP, network connectivity
+
+ASG can send notification to SNS with:
+- Launch
+- Terminate
+- Fail to launch
+- Fail to terminate
