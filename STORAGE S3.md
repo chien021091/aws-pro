@@ -24,3 +24,8 @@ TO check integrety of object when upload to S3 with checksum
 Encrypt 
 - SSE-S3: can read high rate > 10 000 per seconde
 - KMS: throttle rate < 10 000 per seconde
+
+## S3 checksul
+- With a file > 16MB, upload in aws console, s3 use multi-part for upload, and the checksum will calculate by checksum of each part
+- File upload by RESTAPI (SDK ..., CLI), it depends on upload single-part or multi-part, the checksum will calculate based on it, single-part -> calculate all object
+- when any change on console, rename, edit metadata, copy .. s3 user multi-part(>16MB) for update it. The checksum will recalculate (new checksum)

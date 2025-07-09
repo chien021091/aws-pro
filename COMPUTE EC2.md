@@ -20,3 +20,10 @@ ASG can send notification to SNS with:
 - Terminate
 - Fail to launch
 - Fail to terminate
+
+- For taget tracking ASG, not need to create a cloudwatch alarm. it's ASG will magage it (auto create , modify and delete)
+
+## Share AMI from Account A to account B
+- In account A, create an AMI encrypted from unencrypted version and specify KMS key in the copy action. Modify the key to give permission to account B for create a grant. Share the encrypted AMI to account B
+- In account B, create a grant KMS that delegates a permission to the service-linked role attached to ASG.
+- 
