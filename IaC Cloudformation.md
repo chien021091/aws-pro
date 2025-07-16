@@ -30,3 +30,12 @@ Manually modify or delete resources that are causing the rollback faillure to al
     - lambda must send a response contain the pre-signed url , indicating success or failure
     - Cloudformation wait for this reponse to change the stack status
 - CloudFormation does not support drift detection for custom resource
+
+# Fn::FindInMap
+- Not need include Mappings in parameters
+Mappings:
+    Regions:
+        eu-west-3:
+            AMI_ID: ami-1234
+
+-> Fn::FindInMap [Regions, eu-west-3, AMI_ID]

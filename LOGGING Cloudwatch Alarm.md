@@ -45,3 +45,6 @@ Recover Action:
 
 ## Cloudwatch log subscription
 - get access to real-time feed a log events from cloudwatch log and have it delivered to other service such as: Kinesis stream, kinesis data firehorse, lambda
+
+## Cloudwatch log agent
+- cloudwatch log agent can only want to stream log and push to Cloudwatch. If we want to push all log one time, we don't need cloudwatch log agen (SSM run command, it's good)
