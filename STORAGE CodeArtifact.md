@@ -1,0 +1,1 @@
+- use S3 for store packages assets. To pull package from code artifact (private), must create a s3 gateway endpoint

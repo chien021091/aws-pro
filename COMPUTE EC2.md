@@ -26,4 +26,9 @@ ASG can send notification to SNS with:
 ## Share AMI from Account A to account B
 - In account A, create an AMI encrypted from unencrypted version and specify KMS key in the copy action. Modify the key to give permission to account B for create a grant. Share the encrypted AMI to account B
 - In account B, create a grant KMS that delegates a permission to the service-linked role attached to ASG.
-- 
+-
+## Image Builder
+- automatic creation AMI or container image
+- can be run on schedule
+- can publish to multiples regions, accounts
+- use RAM (resources access manager) to share across AWS account or organization (can not use parameter store because different region, account, ..)

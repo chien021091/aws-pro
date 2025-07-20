@@ -39,3 +39,7 @@ Mappings:
             AMI_ID: ami-1234
 
 -> Fn::FindInMap [Regions, eu-west-3, AMI_ID]
+# cfn-signal
+helper script signal cloudformation to indicate whether ec2 instance have been successfully created or updated. if you install or update a software application in ec2 instance, you can signal cloudformation when the application is ready
+# 
+By default, all the resources associated the deleted stack will be deleted, unless the resource's deletePolicy SET to RATAIN

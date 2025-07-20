@@ -1,0 +1,2 @@
+- Integrates KMS to secure data at rest by default
+- use SSL/TLS to secure data-in-flight
