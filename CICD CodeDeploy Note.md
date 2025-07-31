@@ -7,3 +7,6 @@
 - ECS blue-green deployments is supported using both CodeDeploy and cloudformation. For blue-green deployment in cloudFormation, you don't create a CodeDeploy application or deployment group
 - Lambda, ECS deployment can not use in-place deployment type.
 - In Canary deployment, there are no-option to pause it manually through an approval step
+
+## Deploy iam
+- CodeDeploy in EC2 instances need iam role connect to deploy (via IG, NAT, VPC Endpoint), if not -> Skipped

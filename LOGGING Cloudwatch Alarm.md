@@ -48,3 +48,4 @@ Recover Action:
 
 ## Cloudwatch log agent
 - cloudwatch log agent can only want to stream log and push to Cloudwatch. If we want to push all log one time, we don't need cloudwatch log agen (SSM run command, it's good)
+- cloudwatch agent can send only to cloudwatch log ( not direct firehorse, s3 ...)

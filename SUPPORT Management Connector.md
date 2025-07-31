@@ -1,0 +1,1 @@
+- If organization use ServiceNow, Jira or another service ITSM Platform and want to manage AWS service without switching tool
